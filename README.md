@@ -1,27 +1,35 @@
-# GithubProfile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+# DevChallenge Challenge
+Level 3/5 front-end challenge proposed by the DevChallenge platform. The challenge consisted of creating a page capable of showing the Github profile of any user entered in the input. For this challenge, it is necessary to carry it out according to the proposed design and stories.
 
-## Development server
+### Stories do desafio: 
+- Create a Github profile page that matches the given design.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Use HTML to create the basic structure.
 
-## Code scaffolding
+- Add inputs, images, buttons,.. according to the design.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Use JavaScript to add interactivity.
 
-## Build
+- Users should be able to search for user by user name.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- User should be able to see the number of followers, following, and location.
 
-## Running unit tests
+- User should be able to see the repositories that profile has.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- User should be able to see the details of each repository.
 
-## Running end-to-end tests
+- When users select repository card, they should be able to see the repository page in the new tab.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- The page should be responsive on different screen sizes.
 
-## Further help
+- Deploy the solution and submit Repository URL and Demo URL.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Screenshots:
+
+
+### Technologies used:
+
+![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/64px-Angular_full_color_logo.svg.png)
+
