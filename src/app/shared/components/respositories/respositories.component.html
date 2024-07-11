@@ -1,1 +1,24 @@
-<p>respositories works!</p>
+<div *ngFor="let item of apiData">
+  <a class="repositorie" href="{{ item.url }}">
+    <h2 class="repo-name">{{ item.name }}</h2>
+    <p class="repo-description">{{ item.description }}</p>
+
+    <aside class="info-group">
+      <div>
+        <img src="assets/svg/child_alt.svg" alt="Child svg icon" />
+      </div>
+
+      <div>
+        <img src="assets/svg/nesting.svg" alt="Nesting svg icon" />
+        {{item.forks_count}}
+      </div>
+
+      <div>
+        <img src="assets/svg/star" alt="Star svg icon" />
+        {{item.stargazers_count}}
+      </div>
+
+      <p>{{ item.updated_at }}</p>
+    </aside>
+  </a>
+</div>

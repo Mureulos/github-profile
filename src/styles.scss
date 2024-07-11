@@ -1,14 +1,14 @@
 @import './assets/scss/$_color-variables.scss';
 @import './assets/scss/$_typograph.scss';
 
-*, *:before, *:after{
+*, *:before, *:after {
   box-sizing: border-box;
   border-radius: 10px;
   font-family: 'DM Sans Medium';
 }
 
 html, body {
-  background-color: $cinder;
+  background-color: $bright-grey
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
