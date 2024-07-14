@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ReposType } from '../../interfaces/type';
+import { ProfileType, ReposType } from '../../interfaces/type';
 
 @Component({
   selector: 'app-respositories',
@@ -10,5 +10,6 @@ import { ReposType } from '../../interfaces/type';
   styleUrl: './respositories.component.scss'
 })
 export class RespositoriesComponent {
-  @Input() apiData: ReposType[] = []
+  @Input() profileData: ProfileType[] = []
+  @Input() reposData: ReposType[] = []
 }

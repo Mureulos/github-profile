@@ -1,14 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { EMPTY_PROFILE, ProfileType } from '../../interfaces/type';
-import { profile } from 'node:console';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-data-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './data-card.component.html',
   styleUrl: './data-card.component.scss',
 })
 export class DataCardComponent {
-  @Input() apiData: ProfileType = EMPTY_PROFILE;
+  @Input() apiData: ProfileType = EMPTY_PROFILE
 }

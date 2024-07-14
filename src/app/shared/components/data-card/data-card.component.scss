@@ -4,6 +4,21 @@
 section {
     display: flex;
     justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+
+    .profile-pic {
+        width: 100%;
+        height: 100%;
+        max-width:64px;
+        max-height:64px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
     .cards-group {
         display: flex;
