@@ -1,32 +1,49 @@
-@if (apiData) {
-  <header>
-    <figure class="profile-pic">
-      <img [src]="apiData.avatar_url" alt="Profile picture" />
+<header>
+  <figure class="profile-pic">
+    <img [src]="apiData?.avatar_url" alt="Profile picture" />
+  </figure>
+
+  <div class="cards-group">
+    <div class="card">
+      <p>Followers</p>
+      <div class="vertical-bar"></div>
+      <span>{{ apiData?.followers }}</span>
+    </div>
+
+    <div class="card">
+      <p>Following</p>
+      <div class="vertical-bar"></div>
+      <span>{{ apiData?.following }}</span>
+    </div>
+
+    <div class="card" *ngIf="apiData?.location">
+      <p>Location</p>
+      <div class="vertical-bar"></div>
+      <span>{{ apiData?.location }}</span>
+    </div>
+  </div>
+</header>
+
+<aside>
+  <div class="infos">
+    <a [href]="apiData?.url" class="name">
+      <h1>{{ apiData?.login }}</h1> <h2>({{ apiData?.name }})</h2>
+    </a>
+
+    <p>{{ apiData?.bio }}</p>
+  </div>
+
+  <div class="social-links">
+    <figure *ngIf="apiData?.blog">
+      <a [href]="apiData?.blog">
+        <img src="assets/img/link-logo.png" alt="Link logo" class="link">
+      </a>
     </figure>
 
-    <div class="cards-group">
-      <div class="card">
-        <p>Followers</p>
-        <div class="vertical-bar"></div>
-        <span>{{ apiData.followers }}</span>
-      </div>
-
-      <div class="card">
-        <p>Following</p>
-        <div class="vertical-bar"></div>
-        <span>{{ apiData.following }}</span>
-      </div>
-
-      <div class="card">
-        <p>Location</p>
-        <div class="vertical-bar"></div>
-        <span>{{ apiData.location }}</span>
-      </div>
-    </div>
-  </header>
-
-  <aside>
-    <h1>{{ apiData.login }}</h1>
-    <p>{{ apiData.bio }}</p>
-  </aside>
-}
+    <figure *ngIf="apiData?.twitter_username">
+      <a [href]="apiData?.twitter_username" class="twitter">
+        <img src="assets/img/twitter-logo.png" alt="X logo">
+      </a>
+    </figure>
+  </div>
+</aside>

@@ -13,6 +13,11 @@
     src: url('../fonts/BeVietnamPro-Medium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Be Vietnam Pro Light';
+    src: url('../fonts/BeVietnamPro-Light.ttf') format('truetype');
+}
+
 $heading: 2rem;
 $title: 1.25rem;
 $body-text: 1rem;

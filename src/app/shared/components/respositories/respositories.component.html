@@ -1,4 +1,4 @@
-<main *ngFor="let item of reposData">
+<nav *ngFor="let item of reposData">
   <a class="repositorie" href="{{ item.html_url }}" target="_blank">
     <h2 class="repo-name">{{ item.name }}</h2>
     <p class="repo-description">{{ item.description }}</p>
@@ -21,4 +21,4 @@
       <p>{{ item.updated_at }}</p>
     </aside>
   </a>
-</main>
+</nav>

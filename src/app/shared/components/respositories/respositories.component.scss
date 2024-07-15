@@ -6,27 +6,32 @@
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     border-radius: 20px;
-    padding: 1.5em 1em;
-    color:$river-bed;
+    padding: 1.5em;
+    color: $iron;
     background: $mirage;
-    background: linear-gradient(90deg, rgba(17,23,41,1) 0%, rgba(29,27,72,1) 100%);
-    font-family: 'Be Vietnam Pro Regular';
-    font-size: $body-text;
+    background: linear-gradient(90deg, rgba(17, 23, 41, 1) 0%, rgba(29, 27, 72, 1) 100%);
 
     h2 {
-        color: $iron;
-        font-family: 'Be Vietnam Pro Bold';
+        font-size: $title;
     }
-    
+
     p {
-        font-size: $small-text;
+        font-family: "Be Vietnam Pro Light";
+        font-size: $body-text;
+        color: #98a3b5;
     }
 
     .info-group {
         display: flex;
         gap: 1em;
         width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .repositorie {
+        max-width: 100%;
     }
 }

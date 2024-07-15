@@ -4,11 +4,13 @@
 *, *:before, *:after {
   box-sizing: border-box;
   border-radius: 10px;
-  font-family: 'DM Sans Medium';
+  font-family: 'Be Vietnam Pro Regular';
+  text-decoration: none;
+  color: $iron;
 }
 
 html, body {
-  background-color: $bright-grey
+  background-color: $ebony-clay;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
@@ -55,20 +57,10 @@ input {
 
 .container {
   display: flex;
-  align-items: center;
-  padding: 4em 2em;
-  max-width: 1280px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 3em;
+  max-width: 1000px;
   width: 100%;
-}
-
-.content {
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  gap: 1.5em;
-}
-
-.profile {
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 3em;
 }

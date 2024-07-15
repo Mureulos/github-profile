@@ -1,4 +1,9 @@
-app-repositories {
+app-data-card {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em 3em;
+    max-width: 1000px;
+    width: 100%;
+    gap: 3em;
 }

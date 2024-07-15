@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './data-card.component.scss',
 })
 export class DataCardComponent {
-  @Input() apiData: ProfileType | null = null
+  @Input() apiData: ProfileType | null = EMPTY_PROFILE
 }

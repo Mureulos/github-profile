@@ -1,33 +1,39 @@
 @import '../../../../assets/scss/$_color-variables.scss';
 @import '../../../../assets/scss/$_typograph.scss';
 
-section {
+header {
     display: flex;
     justify-content: space-between;
-    max-width: 1280px;
+    align-items: baseline;
     width: 100%;
 
     .profile-pic {
-        width: 100%;
-        height: 100%;
-        max-width:64px;
-        max-height:64px;
+        background-color: $ebony-clay;
+        padding: 1em;
 
         img {
             object-fit: cover;
             width: 100%;
             height: 100%;
+            max-width: 100px;
+            max-height: 100px;
         }
     }
 
     .cards-group {
         display: flex;
         justify-content: space-around;
+        align-items: flex-end;
+        gap: 1em;
 
         .card {
-            p {
-                color: $bright-grey;
-            }
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: $mirage;
+            padding: 1em;
+            color: $bright-grey;
+            width: max-content;
 
             .vertical-bar {
                 height: 100%;
@@ -40,4 +46,74 @@ section {
             }
         }
     }
+}
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .infos {
+        .name {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            flex-wrap: wrap;
+            
+            margin-bottom: 10px;
+
+            h1 {
+                font-size: $heading;
+            }
+        }
+        
+
+        p {
+            color: #98a3b5;
+            font-size: $title;
+            font-family: 'Be Vietnam Pro Light';
+        }
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1em;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            max-width: 64px;
+            max-height: 64px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    header {
+        align-items: normal;
+
+        .cards-group {
+            flex-direction: column;
+        }
+    }
+
+    aside {
+        flex-direction: column;
+        gap: 2.5em;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        
+        .cards-group {
+            .card {
+                width: 100%;
+            }
+        }
+    }
+
 }
