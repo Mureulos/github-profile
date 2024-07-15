@@ -23,12 +23,8 @@ export class HomeComponent implements OnInit {
 
   public getData(username: string) {
     this.githubProfileService.getData(username).subscribe(response => {
-      const json = response
-      json.map(item => this.profileData = item)
-
-      console.log(this.profileData)
-      console.log(response.map((item) => item))
-    })
+      this.profileData = response
+    }) 
 
     this.getRepos(username)
   }

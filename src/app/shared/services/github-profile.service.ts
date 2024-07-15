@@ -12,8 +12,8 @@ export class GithubProfileService {
   private apiUrl: string = 'https://api.github.com/users/';
   constructor(private httpClient: HttpClient) {}
 
-  getData(username: string): Observable<ProfileType[]> {
-    return this.httpClient.get<ProfileType[]>(`${this.apiUrl}${username}`);
+  getData(username: string): Observable<ProfileType> {
+    return this.httpClient.get<ProfileType>(`${this.apiUrl}${username}`);
   }
 
   getRepos(username: string): Observable<ReposType[]> {

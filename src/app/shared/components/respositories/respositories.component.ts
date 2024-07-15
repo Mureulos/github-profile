@@ -10,6 +10,5 @@ import { ProfileType, ReposType } from '../../interfaces/type';
   styleUrl: './respositories.component.scss'
 })
 export class RespositoriesComponent {
-  @Input() profileData: ProfileType[] = []
   @Input() reposData: ReposType[] = []
 }
