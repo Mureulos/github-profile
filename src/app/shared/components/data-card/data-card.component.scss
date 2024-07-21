@@ -66,6 +66,10 @@ aside {
             h1 {
                 font-size: $heading;
             }
+
+            h1:hover {
+                text-decoration: underline;
+            }
         }
         
 

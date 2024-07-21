@@ -10,28 +10,33 @@ import { GithubProfileService } from '../../shared/services/github-profile.servi
   standalone: true,
   imports: [DataCardComponent, DropdownComponent, RespositoriesComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  profileData: ProfileType = EMPTY_PROFILE
-  reposData: ReposType[] = []
+  profileData: ProfileType = EMPTY_PROFILE;
+  reposData: ReposType[] = [];
+
   constructor(private githubProfileService: GithubProfileService) {}
 
   ngOnInit(): void {
-    this.getData('Mureulos')
+    this.getData('prife');
   }
 
-  public getData(username: string) {
+  onSearch(username: string) {
+    this.getData(username);
+  }
+
+  getData(username: string) {
     this.githubProfileService.getData(username).subscribe(response => {
-      this.profileData = response
-    }) 
+      this.profileData = response;
+    });
 
-    this.getRepos(username)
+    this.getRepos(username);
   }
 
-  public getRepos(username: string) {
+  getRepos(username: string) {
     this.githubProfileService.getRepos(username).subscribe(response => {
-      this.reposData = response
-    })
+      this.reposData = response;
+    });
   }
 }

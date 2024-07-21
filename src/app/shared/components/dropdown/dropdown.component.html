@@ -1,1 +1,8 @@
-<p>dropdown works!</p>
+<form (submit)="onSearch($event)">
+  <input
+    type="text"
+    placeholder="username"
+    [(ngModel)]="username"
+    name="username"
+  />
+</form>

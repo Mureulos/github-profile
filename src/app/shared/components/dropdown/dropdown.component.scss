@@ -1,0 +1,39 @@
+@import '../../../../assets/scss/$_color-variables.scss';
+@import '../../../../assets/scss/$_typograph.scss';
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+
+    input {
+        border-radius: 10px;
+        outline-color: $royal-blue;
+        border: none;
+        width: 350px;
+        height: auto;
+        padding: 1em;
+        background: $ebony-clay;
+        font-size: $small-text;
+        font-family: 'Be Vietnam Pro Regular';
+    }
+
+    input::placeholder {
+        color: $bright-grey;
+    }
+
+    select {
+        width: 300px;
+        height: auto;
+
+        option {
+            width: 300px;
+            height: 40px;
+            padding: 1em;
+            background: $blue-zodiac;
+        }
+    }
+}
+
