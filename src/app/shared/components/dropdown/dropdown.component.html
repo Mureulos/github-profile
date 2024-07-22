@@ -1,8 +1,26 @@
 <form (submit)="onSearch($event)">
   <input
+    #usernameInput
     type="text"
     placeholder="username"
     [(ngModel)]="username"
     name="username"
   />
+  
+  <ul *ngIf="suggestions$ | async as suggestions">
+    <li
+      *ngFor="let suggestion of suggestions"
+      (click)="onSelect(suggestion.login)"
+    >
+      <a [href]="suggestion.html_url" target="_blank">
+        <figure>
+          <img
+            [src]="suggestion.avatar_url"
+            alt="Avatar of {{ suggestion.login }}"
+          />
+        </figure>
+          <h1>{{ suggestion.login }}</h1>
+      </a>
+    </li>
+  </ul>
 </form>

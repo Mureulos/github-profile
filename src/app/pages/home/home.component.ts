@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   constructor(private githubProfileService: GithubProfileService) {}
 
   ngOnInit(): void {
-    this.getData('prife');
+    this.getData('a');
   }
 
   onSearch(username: string) {
