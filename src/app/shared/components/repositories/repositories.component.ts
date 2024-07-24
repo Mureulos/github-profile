@@ -3,13 +3,13 @@ import { Component, Input } from '@angular/core';
 import { EMPTY_PROFILE, ProfileType, ReposType } from '../../interfaces/type';
 
 @Component({
-  selector: 'app-respositories',
+  selector: 'app-repositories',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './respositories.component.html',
-  styleUrl: './respositories.component.scss'
+  templateUrl: './repositories.component.html',
+  styleUrl: './repositories.component.scss'
 })
-export class RespositoriesComponent {
+export class RepositoriesComponent {
   @Input() profileData: ProfileType | null = EMPTY_PROFILE
   @Input() reposData: ReposType[] = []
 }

@@ -1,6 +1,8 @@
 <header>
   <figure class="profile-pic">
-    <img [src]="apiData?.avatar_url" alt="Profile picture" />
+    <a [href]="apiData?.html_url">
+      <img [src]="apiData?.avatar_url" alt="Profile picture" />
+    </a>
   </figure>
 
   <div class="cards-group">

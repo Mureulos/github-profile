@@ -68,7 +68,6 @@ export const EMPTY_PROFILE: ProfileType = {
   updated_at: ''
 };
 
-
 export interface ReposType {
   id: number;
   node_id: string;
@@ -252,7 +251,6 @@ export const EMPTY_REPOS: ReposType = {
   default_branch: ''
 }
 
-
 export interface OwnerType {
   login: string;
   id: number;
@@ -272,4 +270,10 @@ export interface OwnerType {
   received_events_url: string;
   type: string;
   site_admin: boolean;
+}
+
+export interface searchType {
+  total_count: number;
+  incomplete_results: boolean;
+  items: ProfileType[];
 }
