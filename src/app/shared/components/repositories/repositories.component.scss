@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: 1em;
     width: 100%;
+    min-width: 350px;
     border-radius: 20px;
     padding: 1.5em;
     color: $iron;
@@ -14,7 +15,7 @@
     background: linear-gradient(90deg, rgba(17, 23, 41, 1) 0%, rgba(29, 27, 72, 1) 100%);
 
     h2 {
-        font-size: $title;
+        font-size: $body-text;
     }
 
     p {
@@ -25,13 +26,31 @@
 
     .info-group {
         display: flex;
-        gap: 1em;
+        justify-content: space-around;
         width: 100%;
+
+        div {
+            display: flex;
+            gap: 1em;
+            width: 100%;
+        }
+
+        p {
+            width: max-content;
+            font-size: smaller;
+        }
     }
 }
 
 @media (max-width: 950px) {
     .repositorie {
         flex: 2;
+    }
+}
+
+@media (max-width: 470px) {
+    .repositorie {
+        padding: 1.5em 1em;
+        margin: 0 1em;
     }
 }

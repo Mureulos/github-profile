@@ -28,6 +28,7 @@ Level 3/5 front-end challenge proposed by the DevChallenge platform. The challen
 
 ## Screenshots:
 
+![App Screenshot](src/assets/img/done.png)
 
 ### Technologies used:
 

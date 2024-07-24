@@ -7,7 +7,7 @@ form {
     justify-content: center;
     align-items: center;
     gap: 0.75em;
-    width: 325px;
+    width: 450px;
 
     input {
         border-radius: 10px;
@@ -17,7 +17,7 @@ form {
         height: auto;
         padding: 1em;
         background: $ebony-clay;
-        font-size: $small-text;
+        font-size: $body-text;
         font-family: 'Be Vietnam Pro Regular';
     }
 
@@ -35,14 +35,14 @@ form {
         flex-direction: column;
         gap: 1em;
         width: 100%;
-        max-width: 325px;
+        max-width: 450px;
         height: auto;
         background: $ebony-clay;
 
         li {
             width: 100%;
             height: 80px;
-            padding: 1em;
+            padding: 10px;
             background: $mirage;
 
             display: flex;
@@ -63,5 +63,15 @@ form {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 950px) {
+    form {
+        width: 325px;
+    }
+
+    ul {
+        width: 325px;
     }
 }

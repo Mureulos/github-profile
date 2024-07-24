@@ -28,7 +28,7 @@
 
 <aside>
   <div class="infos">
-    <a [href]="apiData?.url" class="name">
+    <a [href]="apiData?.html_url" class="name">
       <h1>{{ apiData?.login }}</h1> <h2>({{ apiData?.name }})</h2>
     </a>
 
@@ -38,13 +38,13 @@
   <div class="social-links">
     <figure *ngIf="apiData?.blog">
       <a [href]="apiData?.blog">
-        <img src="/assets/img/link-logo.png" alt="Link logo" class="link">
+        <img src="assets/img/link-logo.png" alt="Link logo" class="link">
       </a>
     </figure>
 
     <figure *ngIf="apiData?.twitter_username">
       <a [href]="apiData?.twitter_username" class="twitter">
-        <img src="/assets/img/twitter-logo.png" alt="X logo">
+        <img src="assets/img/twitter-logo.png" alt="X logo">
       </a>
     </figure>
   </div>

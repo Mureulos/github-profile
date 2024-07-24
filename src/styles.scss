@@ -64,3 +64,9 @@ input {
   width: 100%;
   gap: 3em;
 }
+
+@media (max-width: 470px) {
+  .container {
+    padding: 0;
+  }
+}

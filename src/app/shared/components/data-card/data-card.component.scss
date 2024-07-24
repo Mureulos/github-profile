@@ -9,7 +9,9 @@ header {
 
     .profile-pic {
         background-color: $ebony-clay;
-        padding: 1em;
+        padding: 10px;
+        border-radius: 20px;
+        max-width: max-content;
 
         img {
             object-fit: cover;
@@ -51,7 +53,7 @@ header {
 aside {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
 
     .infos {
@@ -60,7 +62,7 @@ aside {
             align-items: baseline;
             gap: 10px;
             flex-wrap: wrap;
-            
+
             margin-bottom: 10px;
 
             h1 {
@@ -71,7 +73,6 @@ aside {
                 text-decoration: underline;
             }
         }
-        
 
         p {
             color: #98a3b5;
@@ -88,8 +89,8 @@ aside {
             object-fit: cover;
             width: 100%;
             height: 100%;
-            max-width: 64px;
-            max-height: 64px;
+            max-width: 32px;
+            max-height: 32px;
         }
     }
 }
@@ -105,6 +106,7 @@ aside {
 
     aside {
         flex-direction: column;
+        align-items: center;
         gap: 2.5em;
     }
 }
@@ -112,7 +114,7 @@ aside {
 @media (max-width: 550px) {
     header {
         flex-direction: column;
-        
+
         .cards-group {
             .card {
                 width: 100%;
@@ -120,4 +122,11 @@ aside {
         }
     }
 
+    aside {
+        .infos {
+            p {
+                font-size: $body-text;
+            }
+        }
+    }
 }
