@@ -7,7 +7,7 @@ form {
     justify-content: center;
     align-items: center;
     gap: 0.75em;
-    width: 375px;
+    width: 325px;
 
     input {
         border-radius: 10px;
@@ -15,7 +15,7 @@ form {
         border: none;
         width: 100%;
         height: auto;
-        padding: 10px;
+        padding: 1em;
         background: $ebony-clay;
         font-size: $small-text;
         font-family: 'Be Vietnam Pro Regular';
@@ -35,7 +35,7 @@ form {
         flex-direction: column;
         gap: 1em;
         width: 100%;
-        max-width: 375px;
+        max-width: 325px;
         height: auto;
         background: $ebony-clay;
 
