@@ -1,4 +1,8 @@
-<app-dropdown (search)="onSearch($event)"></app-dropdown>
+<app-dropdown 
+  (search)="onSearch($event)"
+  [initialUsername]="lastSearchedUser"
+></app-dropdown>
+
 <app-data-card [apiData]="profileData"></app-data-card>
 
 <app-repositories

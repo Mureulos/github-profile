@@ -13,6 +13,11 @@
     color: $iron;
     background: $mirage;
     background: linear-gradient(90deg, rgba(17, 23, 41, 1) 0%, rgba(29, 27, 72, 1) 100%);
+    transition: all 0.25s;
+    -webkit-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+    -moz-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+    box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+    
 
     h2 {
         font-size: $body-text;
@@ -40,6 +45,10 @@
             font-size: smaller;
         }
     }
+}
+
+.repositorie:hover {
+    transform: scale(0.95);
 }
 
 @media (max-width: 950px) {

@@ -5,9 +5,13 @@
     placeholder="username"
     [(ngModel)]="username"
     name="username"
+    (focusout)="onFocusOut($event)"
   />
   
-  <ul *ngIf="suggestions$ | async as suggestions">
+  <ul 
+    *ngIf="suggestions | async as suggestions"
+    (mousedown)="onDropdownClick($event)" 
+  >
     <li
       *ngFor="let suggestion of suggestions"
       (click)="onSelect(suggestion.login)"

@@ -15,11 +15,22 @@ import { GithubProfileService } from '../../shared/services/github-profile.servi
 export class HomeComponent implements OnInit {
   profileData: ProfileType = EMPTY_PROFILE;
   reposData: ReposType[] = [];
+  lastSearchedUser: string = 'Mureulos';
 
   constructor(private githubProfileService: GithubProfileService) {}
 
   ngOnInit(): void {
-    this.getData('Mureulos');
+    // Recupera o nome do último usuario no local storage
+    const savedUsername = localStorage.getItem('lastSearchedUser');
+
+    // Se existir algum usuario salvo no local storage, emita a pesquisa. Senão, adicione no localStorage
+    if (savedUsername) {
+      this.lastSearchedUser = savedUsername;
+    } else {
+      // Salva o nome do último usuario no local storage
+      localStorage.setItem('lastSearchedUser', this.lastSearchedUser);
+    }
+    this.getData(this.lastSearchedUser);
   }
 
   onSearch(username: string) {

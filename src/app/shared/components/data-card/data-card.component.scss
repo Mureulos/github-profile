@@ -19,6 +19,14 @@ header {
             height: 100%;
             max-width: 100px;
             max-height: 100px;
+            -webkit-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+            -moz-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+            box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+            transition: all 0.25s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
         }
     }
 
@@ -36,6 +44,9 @@ header {
             padding: 1em;
             color: $bright-grey;
             width: max-content;
+            -webkit-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+            -moz-box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
+            box-shadow: 1px 4px 13px 0px rgb(0 0 0 / 36%);
 
             .vertical-bar {
                 height: 100%;

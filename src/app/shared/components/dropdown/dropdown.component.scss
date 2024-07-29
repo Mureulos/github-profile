@@ -31,13 +31,13 @@ form {
     }
 
     ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 1em;
         width: 100%;
         max-width: 450px;
         height: auto;
-        background: $ebony-clay;
+        background: transparent;
 
         li {
             width: 100%;
@@ -51,6 +51,7 @@ form {
             width: 100%;
             height: 100%;
             gap: 1em;
+            transition: all 0.25s;
 
             figure {
                 max-width: 64px;
@@ -63,7 +64,15 @@ form {
                 }
             }
         }
+
+        li:hover {
+            transform: scale(1.04);
+        }
     }
+}
+
+form:focus-within ul {
+    display: flex;
 }
 
 @media (max-width: 950px) {
